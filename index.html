@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Friend Are You?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Which Friend Are You?</h1>
+        <p>A short story-based personality(?) quiz by nicoooo-23</p>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main id="quiz-container">
+        <!-- FIRST QUESTION -->
+        <section id="question1" class="question active">
+            <!-- STORY PART 1 -->
+            <p class="story">
+                You awaken in an unfamiliar room. The bed underneath you is old. As you sit up—bed creaking with each move—you look around to see that there is no one else present. As you shift, something lumpy presses against your hand. You stand up and check if there is anything underneath. As you lift up the cushion, you see a small wooden box. You pry it open, what do you see inside?
+            </p>
+            <!-- CHOICES 1 -->
+            <div class="choices">
+                <button class="choice" data-next="question2" data-friend="Zora">aleph</button>
+                <button class="choice" data-next="question2" data-friend="Jam">sb19</button>
+                <button class="choice" data-next="question2" data-friend="Reii">noelle</button>
+                <button class="choice" data-next="question2" data-friend="Emi">96neko</button>
+            </div>
+        </section>
+        <!-- SECOND QUESTION -->
+        <section id="question2" class="question">
+            <!-- STORY PART 2 -->
+            <p class="story">
+                You bring the item you chose with you and head out the room. Outside is a long hallway covered in doors. The wallpapers are peeling and faded. At the end of the hallway is a window—dusty and cracked—where a tiny bit of light seeped through. Behind one of the doors, you hear a faint noise, what do you do?
+            </p>
+            <!-- CHOICES 2 -->
+            <div class="choices">
+                <button class="choice" data-next="question3" data-friend="Zora">make aleph go in</button>
+                <button class="choice" data-next="question3" data-friend="Jam">Ignore it and continue walking</button>
+                <button class="choice" data-next="question3" data-friend="Reii">Knock on the door</button>
+                <button class="choice" data-next="question3" data-friend="Emi">Peek through the keyhole</button>
+            </div>
+        </section>
+        <!-- THIRD QUESTION -->
+        <section id="question3" class="question">
+            <!-- STORY PART 3 -->
+            <p class="story">
+                The noise becomes louder and somehow sounds like it's coming from behind you. You look back to see a creature has followed you. It looks up at you with curious eyes. What is this creature?
+            </p>
+            <!-- CHOICES 3 -->
+            <div class="choices">
+                <button class="choice" data-next="question4" data-friend="Zora">CARBUNCLE</button>
+                <button class="choice" data-next="question4" data-friend="Jam">A cat</button>
+                <button class="choice" data-next="question4" data-friend="Reii">A baby dragon</button>
+                <button class="choice" data-next="question4" data-friend="Emi">A unicorn</button>
+            </div>
+        </section>
+        <!-- FOURTH QUESTION -->
+        <section id="question4" class="question">
+            <!-- STORY PART 4 -->
+            <p class="story">
+                You have decided to let the creature follow you as you find a way out of this place. As you both walk toward the end of the hallway, your eyes catch the faint glow of the door to your right. You turn to walk towards it—your hand slowly reaching for the knob. You quickly turn it, hoping to find an exit—but it's locked. You observe the door and notice some carvings on it. What will you do next to unlock the door?
+            </p>
+            <!-- CHOICES 4 -->
+            <div class="choices">
+                <button class="choice" data-next="results" data-friend="Zora">make aleph unlock the door</button>
+                <button class="choice" data-next="results" data-friend="Jam">Read the carvings out loud like a ritual</button>
+                <button class="choice" data-next="results" data-friend="Reii">Trace the carvings and hope that does something</button>
+                <button class="choice" data-next="results" data-friend="Emi">Kick the door open</button>
+            </div>
+        </section>
+        <!-- RESULTS SECTION -->
+        <section id="results" class="results">
+            <p class="story">
+                The door has been unlocked. You pushed it open—as the door creaked, the light from outside crept through. You have made it out safely and with a new companion. Thank you for taking the quiz!
+            </p>
+            <h2>Your Result:</h2>
+            <p id="result-text"></p>
+            <button id="restart-btn">Restart Quiz</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
