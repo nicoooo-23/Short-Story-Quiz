@@ -13,9 +13,14 @@ body {
     background-color: var(--pale-blue);
     color: var(--dark-navy);
     font-family: var(--body-font);
+    font-size: 1.2rem;
     margin: 0;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -25,8 +30,12 @@ header {
 
 header p {
     font-family: var(--body-font);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: -10px;
+}
+
+#start-btn {
+    margin-top: 20px;
 }
 
 #quiz-container {
@@ -34,12 +43,22 @@ header p {
 }
 
 #instructions {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
 }
 
-.quiz-container {
-    max-width: 500px;
-    margin: auto;
+.question {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .question, .results {
@@ -61,8 +80,7 @@ header p {
 }
 
 .choice {
-    max-width: 60%;
-    min-width: 40%;
+    min-width: 60%;
 }
 
 button {
@@ -96,15 +114,15 @@ button:active {
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     padding: 30px;
-    max-width: 400px;
+    max-width: 50%;
     margin: 40px auto;
     animation: fadeIn 0.6s ease forwards;
 }
 
 .results img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
     object-fit: cover;
     margin-bottom: 15px;
 }
