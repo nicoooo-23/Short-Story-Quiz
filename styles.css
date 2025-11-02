@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&display=swap');
+
+:root {
+    --pale-blue: #f4f8ff;
+    --sky-blue: #74b3ff;
+    --vivid-blue: #0b5fff;
+    --cerulean: #0066cc;
+    --dark-navy: #143660;
+    --muted-navy: #5b6b86;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--pale-blue);
+    color: var(--dark-navy);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.question, .results {
+  display: none;
+  margin-bottom: 2rem;
+}
