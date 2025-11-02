@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which Friend Are You?</title>
+    <title>Which Friend of Mine Are You?</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <h1>Which Friend Are You?</h1>
+        <h1>Which Friend of Mine Are You?</h1>
         <p>A short story-based personality(?) quiz by nicoooo-23</p>
     </header>
+
+    <!-- STARTING INSTRUCTIONS -->
+    <section id="instructions">
+        <p>Welcome to the quiz! In this story, you will make choices that will determine which of my friends you are most like. Read each part of the story carefully and choose the option that resonates with you the most. At the end of the quiz, you'll find out which friend you align with based on your choices.<br><br>Let's go!</p>   
+        <button id="start-btn">Start Quiz</button>
+    </section>
+
     <!-- MAIN CONTENT -->
     <main id="quiz-container">
         <!-- FIRST QUESTION -->
@@ -71,7 +78,7 @@
             </div>
         </section>
         <!-- RESULTS SECTION -->
-        <div id="resultSection" class="result-card" style="display: none;">
+        <div id="results" class="results">
             <p class="story">
                 The door has been unlocked. You pushed it open—as the door creaked, the light from outside crept through. You have made it out safely and with a new companion. Thank you for taking the quiz!
             </p>
