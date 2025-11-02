@@ -24,7 +24,7 @@
             <div class="choices">
                 <button class="choice" data-next="question2" data-friend="Zora">aleph</button>
                 <button class="choice" data-next="question2" data-friend="Jam">A cat</button>
-                <button class="choice" data-next="question2" data-friend="Reii">noelle</button>
+                <button class="choice" data-next="question2" data-friend="Reii">A key</button>
                 <button class="choice" data-next="question2" data-friend="Emi">96neko</button>
             </div>
         </section>
@@ -71,14 +71,15 @@
             </div>
         </section>
         <!-- RESULTS SECTION -->
-        <section id="results" class="results">
+        <div id="resultSection" class="result-card" style="display: none;">
             <p class="story">
                 The door has been unlocked. You pushed it open—as the door creaked, the light from outside crept through. You have made it out safely and with a new companion. Thank you for taking the quiz!
             </p>
-            <h2>Your Result:</h2>
-            <p id="result-text"></p>
-            <button id="restart-btn">Restart Quiz</button>
-        </section>
+            <img id="resultImage" src="" alt="Result Image">
+            <h2 id="resultName"></h2>
+            <p id="resultDescription"></p>
+            <button id="restart-btn">Try Again</button>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
