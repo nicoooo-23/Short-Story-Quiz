@@ -2,8 +2,6 @@
 
 :root {
     --pale-blue: #f4f8ff;
-    --sky-blue: #74b3ff;
-    --vivid-blue: #0b5fff;
     --cerulean: #0066cc;
     --dark-navy: #143660;
     --muted-navy: #5b6b86;
@@ -16,15 +14,102 @@ body {
     color: var(--dark-navy);
     font-family: var(--body-font);
     margin: 0;
-    padding: 0;
+    padding: 20px;
     text-align: center;
 }
+
+header {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+header p {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    margin-top: -10px;
+}
+
+#quiz-container {
+    display: none;
+}
+
+#instructions {
+    display: block;
+}
+
 .quiz-container {
-  max-width: 600px;
-  margin: auto;
+    max-width: 500px;
+    margin: auto;
 }
 
 .question, .results {
-  display: none;
-  margin-bottom: 2rem;
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.question.active, .results.active {
+    display: block;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.choice {
+    max-width: 60%;
+    min-width: 40%;
+}
+
+button {
+    background-color: var(--dark-navy);
+    color: var(--pale-blue);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--cerulean);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.results {
+    display: none;
+    text-align: center;
+    background: var(--muted-navy);
+    color: var(--pale-blue);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 400px;
+    margin: 40px auto;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.results img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
