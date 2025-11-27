@@ -32,7 +32,7 @@ const results = {
   },
   Emi: {
     name: "E",
-    description: "You’re most like Emi — gentle, kind, and a quiet source of comfort. Even in strange places, you bring warmth and calmness to everyone around you. You’d be the one to find a way home — and make sure everyone gets there safely.",
+    description: "You’re most like the E — gentle, sentimental, and guided by quiet instincts. You hold on to what matters, stay cautious when things feel uncertain, and keep your peace above all. Even half-asleep, you know how to stay calm and safe — and you always protect the things you love.",
     image: "images/e.png"
   }
 };
